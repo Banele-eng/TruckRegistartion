@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #formMessage {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Truck Registration for Highway Entrance</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Enter Truck Details</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="truckId">Truck ID:</label>
+                    <input type="text" id="truckId" name="truckId" required>
+                </div>
+                <div class="form-group">
+                    <label for="driverName">Driver's Name:</label>
+                    <input type="text" id="driverName" name="driverName" required>
+                </div>
+                <div class="form-group">
+                    <label for="licensePlate">License Plate Number:</label>
+                    <input type="text" id="licensePlate" name="licensePlate" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="vehicleType">Vehicle Type:</label>
+                    <select id="vehicleType" name="vehicleType">
+                        <option value="truck">Truck</option>
+                        <option value="trailer">Trailer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="entryTime">Entry Time:</label>
+                    <input type="datetime-local" id="entryTime" name="entryTime" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Highway Traffic Control System. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
